@@ -1,9 +1,3 @@
-"""""""""""""""""""""""""""""""""""""""""""
-" VIM配置文件
-"
-" 2017-01-11
-"""""""""""""""""""""""""""""""""""""""""""
-
 " 关闭兼容模式
 set nocompatible
 
@@ -48,3 +42,18 @@ colorscheme desert
 
 " 不生成备份文件
 "set nobackup
+"
+
+" 设置缩进
+set tabstop=2
+"set softtabstop=2
+set shiftwidth=2
+set autoindent
+set expandtab
+
+for() {
+  for() {
+    system.out.println();
+
+  }
+}
