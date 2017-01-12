@@ -47,7 +47,6 @@ colorscheme desert
 
 " 不生成备份文件
 "set nobackup
-"
 
 " 设置缩进
 set tabstop=2
@@ -55,3 +54,12 @@ set tabstop=2
 set shiftwidth=2
 set autoindent
 set expandtab
+
+" 字体设置
+set guifont=courier_new:h16:cGB2312
+
+" 设置命令行的高度
+set cmdheight=1
+set novisualbell
+set foldenable        " 允许折叠
+set foldmethod=manual " 手动折叠
