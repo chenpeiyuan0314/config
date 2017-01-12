@@ -30,7 +30,12 @@ set cursorline
 set ruler
 set showcmd
 set showmode
+" [是否修改][文件名][文件类型][行:列(百分比)][文件目录]
 set laststatus=2
+set statusline=
+set statusline+=%m[FILE=%t][TYPE=%Y] 
+set statusline+=[POS=%l:%c][RATE=%p%%] 
+set statusline+=[DIR=%{expand('%:p:h')}]
 
 " 启用搜索高亮显示
 set incsearch
@@ -42,6 +47,7 @@ colorscheme desert
 
 " 不生成备份文件
 "set nobackup
+"
 
 " 设置缩进
 set tabstop=2
@@ -49,12 +55,3 @@ set tabstop=2
 set shiftwidth=2
 set autoindent
 set expandtab
-
-" 字体设置
-set guifont=courier_new:h16:cGB2312
-
-" 命令行的高度，设置为1
-set cmdheight=1
-set novisualbell
-set foldenable " 允许折叠
-set foldmethod=manual " 手动折叠
